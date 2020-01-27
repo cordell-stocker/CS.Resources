@@ -2,6 +2,10 @@
 
 ## HowTo Install Git
 
+Git Bash can be used exactly like a linux terminal.
+
+In a folder/Desktop `right-click` -> `Git Bash Here`
+
 ### Linux
 
 `sudo apt install git`

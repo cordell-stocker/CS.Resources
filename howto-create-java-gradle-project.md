@@ -39,3 +39,14 @@ PowerShell for Windows\) and running `gradle --version`
 1. For `Project name` the default option is the name of the directory you are in. You can just press `Enter` if that name is fine.
 1. `Source package` MUST be in all lowercase.
 1. You can now open the project in your prefered IDE!
+
+## Note:
+
+To run a gradle project with a "normal" terminal for input/output, do the following:
+- Add the following to the `build.gradle` file:
+```
+run {
+    standardInput = System.in
+}
+```
+- Run the program using the command `.\gradlew run -q --console=plain` at the project's root directory.
